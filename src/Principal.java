@@ -1,4 +1,5 @@
 import screenmatch.modelos.Filme;
+import screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,8 +16,13 @@ public class Principal {
         meuFilme.avaliaFilme(5);
 
 //        System.out.println(meuFilme.avaliacao);
-        System.out.println("Total de avaliações: "+ meuFilme.getTotalAvaliacoes());
+//        System.out.println("Total de avaliações: "+ meuFilme.getTotalAvaliacoes());
 //        System.out.println(meuFilme.mediaAvaliacoes());
 
+
+        Serie brekingBad = new Serie();
+        brekingBad.setNome("Breaking Bad");
+        brekingBad.setAnoDeLancamento(2008);
+        brekingBad.exibiFichaTecnica();
     }
 }
